@@ -4,15 +4,17 @@ Python Aplication Template
 Licence: GPLv3
 """
 
-from flask.ext.wtf import Form, TextField, TextAreaField, DateTimeField, PasswordField
-from flask.ext.wtf import Required
+from flask_wtf import Form
+from wtforms import StringField, TextAreaField, DateTimeField, PasswordField
+
 
 class ExampleForm(Form):
-	title = TextField(u'Título', validators = [Required()])
-	content = TextAreaField(u'Conteúdo')
-	date = DateTimeField(u'Data', format='%d/%m/%Y %H:%M')
-	#recaptcha = RecaptchaField(u'Recaptcha')
+    title = StringField(u'Title')
+    content = TextAreaField(u'Content')
+    date = DateTimeField(u'Date', format='%d/%m/%Y %H:%M')
+# recaptcha = RecaptchaField(u'Recaptcha')
+
 
 class LoginForm(Form):
-	user = TextField(u'Usuário', validators = [Required()])
-	password = PasswordField(u'Senha', validators = [Required()])
+    user = StringField(u'User')
+    password = PasswordField(u'Password')

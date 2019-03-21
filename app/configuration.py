@@ -10,7 +10,7 @@ class Config(object):
 	"""
 	DEBUG = False
 	TESTING = False
-	DATABASE_URI = 'sqlite:///application.db'
+	SQLALCHEMY_DATABASE_URI = 'postgresql://localhost:5432/my_db'
 	BOOTSTRAP_FONTAWESOME = True
 	SECRET_KEY = "MINHACHAVESECRETA"
 	CSRF_ENABLED = True
