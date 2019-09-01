@@ -62,6 +62,12 @@ def login():
                            title='Sign In',
                            form=form)
 
+
+@app.route('/selasarakademik')
+def selmik():
+    return redirect('https://drive.google.com/drive/u/1/folders/1cf4gHA0sTp_Q7alG-b3fQs0N6-OQTi6P')
+
+
 @app.route('/logout/')
 def logout():
     logout_user()

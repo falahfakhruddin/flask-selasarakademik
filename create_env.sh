@@ -7,8 +7,8 @@
 ## Instalation
 ## Create a virtualenv, and activate this: 
 
-virtualenv env 
-source env/bin/activate
+virtualenv venv
+source venv/bin/activate
 pip install -r requirements.txt
-python run.py
+python3 run.py
 

@@ -4,7 +4,7 @@
 *.so
 
 #virtualenv
-env
+venv
 
 # Packages
 *.egg
